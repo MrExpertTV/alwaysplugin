@@ -1,0 +1,22 @@
+name: AlwayPlugin_Server
+version: '${project.version}'
+main: de.tehrion.alwayplugin_server.AlwayPlugin_Server
+api-version: '1.21'
+authors: [TEHRION.DE | DEVELOPER TEAM, MrExpertTV, MindOfBeni_TV]
+description: AlwaysPlugin for your Server
+website: https://tehrion.de
+commands:
+  setalwaysspawn:
+    description: Setzt den AlwaysSpawn-Punkt.
+  alwaysplugin:
+    description: Verwaltet das Plugin AlwaysPlugin.
+    usage: /alwaysplugin <reload>
+    aliases: [ ap ]
+
+permissions:
+  alwaysplugin.reload:
+    description: Erlaubt das Neuladen der Konfiguration.
+    default: op
+  alwaysplugin.setalwaysspawn:
+    description: Erlaubt das Setzen des AlwaysSpawn-Punkts.
+    default: op

@@ -1,0 +1,29 @@
+#-> https://tehrion.de <- Germany Network -> Under construction !
+
+# Config Version
+# Don't edit
+Version: 1.0.0
+
+Activation:
+  AlwaysDay: true #true = always day | false = not always day
+  NoMobs: true #true = no mobs spawning | false = mobs spawning
+  NoWeather: true #true = no weather | false = weather is on
+
+  # Messages/AlwaysSpawn/Teleport-Messages
+  ShowTeleportMessage: true
+
+  # AlwaysJoinMessages
+  EnableFirstJoinMessages: true
+  EnableJoinMessages: true
+  EnableLeaveJoinMessages: true
+
+AlwaysJoinMessages:
+  FirstJoin: "Welcome to the {UserName} on the {ServerName}"
+  Join: "[&a+&f] {UserName}"
+  Leave: "[&c-&f] {UserName}"
+
+Messages:
+  AlwaysSpawn:
+      SetAlwaysSpawn: "&aAlwaysSpawn position set and saved!"
+      Teleport-Message: "§aYou have been teleported to the spawn point!"
+      NotSetMessage: "&cSpawnpoint was not set! Please enter /setalwaysspawn."
